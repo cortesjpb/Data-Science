@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label=<node &#35;0<br/>olive_oil &le; 0.5<br/>samples = 5171<br/>value = [1264, 289, 3250, 368]<br/>class = italian>, fillcolor="#399de582"] ;
+1 [label=<node &#35;1<br/>macaroni &le; 0.5<br/>samples = 2823<br/>value = [911, 283, 1280, 349]<br/>class = italian>, fillcolor="#399de531"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<node &#35;2<br/>parmesan_cheese &le; 0.5<br/>samples = 2539<br/>value = [907, 279, 1005, 348]<br/>class = italian>, fillcolor="#399de50f"] ;
+1 -> 2 ;
+3 [label=<node &#35;3<br/>samples = 2317<br/>value = [873, 277, 823, 344]<br/>class = french>, fillcolor="#e5813909"] ;
+2 -> 3 ;
+4 [label=<node &#35;4<br/>samples = 222<br/>value = [34, 2, 182, 4]<br/>class = italian>, fillcolor="#399de5c9"] ;
+2 -> 4 ;
+5 [label=<node &#35;5<br/>smoked_sausage &le; 0.5<br/>samples = 284<br/>value = [4, 4, 275, 1]<br/>class = italian>, fillcolor="#399de5f7"] ;
+1 -> 5 ;
+6 [label=<node &#35;6<br/>samples = 283<br/>value = [4, 3, 275, 1]<br/>class = italian>, fillcolor="#399de5f8"] ;
+5 -> 6 ;
+7 [label=<node &#35;7<br/>samples = 1<br/>value = [0, 1, 0, 0]<br/>class = german>, fillcolor="#47e539ff"] ;
+5 -> 7 ;
+8 [label=<node &#35;8<br/>mustard &le; 0.5<br/>samples = 2348<br/>value = [353, 6, 1970, 19]<br/>class = italian>, fillcolor="#399de5cf"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<node &#35;9<br/>thyme &le; 0.5<br/>samples = 2260<br/>value = [301, 4, 1936, 19]<br/>class = italian>, fillcolor="#399de5d5"] ;
+8 -> 9 ;
+10 [label=<node &#35;10<br/>samples = 1940<br/>value = [195, 3, 1727, 15]<br/>class = italian>, fillcolor="#399de5e0"] ;
+9 -> 10 ;
+11 [label=<node &#35;11<br/>samples = 320<br/>value = [106, 1, 209, 4]<br/>class = italian>, fillcolor="#399de57b"] ;
+9 -> 11 ;
+12 [label=<node &#35;12<br/>macaroni &le; 0.5<br/>samples = 88<br/>value = [52, 2, 34, 0]<br/>class = french>, fillcolor="#e5813955"] ;
+8 -> 12 ;
+13 [label=<node &#35;13<br/>samples = 81<br/>value = [52, 2, 27, 0]<br/>class = french>, fillcolor="#e5813976"] ;
+12 -> 13 ;
+14 [label=<node &#35;14<br/>samples = 7<br/>value = [0, 0, 7, 0]<br/>class = italian>, fillcolor="#399de5ff"] ;
+12 -> 14 ;
+}
